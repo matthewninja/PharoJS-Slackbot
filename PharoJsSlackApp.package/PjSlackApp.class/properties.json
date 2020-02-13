@@ -3,7 +3,9 @@
 	"super" : "PjExpressApp",
 	"category" : "PharoJsSlackApp",
 	"classinstvars" : [ ],
-	"pools" : [ ],
+	"pools" : [
+		"PjBodyParserPolyfill"
+	],
 	"classvars" : [ ],
 	"instvars" : [ ],
 	"name" : "PjSlackApp",
