@@ -4,10 +4,14 @@
 	"category" : "PharoJsSlackApp",
 	"classinstvars" : [ ],
 	"pools" : [
-		"PjBodyParserPolyfill"
+		"PjBodyParserPolyfill",
+		"PjRequestPolyfill"
 	],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"request",
+		"webhook_url"
+	],
 	"name" : "PjSlackApp",
 	"type" : "normal"
 }

@@ -1,8 +1,8 @@
 routes
 start
 	super start.
-	"bodyParser := BodyParser new."
 	expressServer use: BodyParser json.
-	self slack: #echo handler: #handleMessage:response:.
+	webhook_url := 'your webhook url here'.
+	self slack: #echo handler: #echoHandler:response:.
 	self listen: 3000.
 	^ expressServer.
